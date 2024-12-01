@@ -1,2 +1,2 @@
-def read_data(filename):
+def read_lines(filename):
     return [i.replace("\n", "") for i in open(filename, "r").readlines()]
