@@ -12,13 +12,6 @@ def parse_data(lines):
     return list1, list2
 
 
-def part_two():
-    list1, list2 = parse_data(fileutils.read_lines("data/1.txt"))
-    
-    sim_score = sum(list1[i]*list2.count(list1[i]) for i in range(len(list1)))
-    print(sim_score)
-
-
 def part_one():
     list1, list2 = parse_data(fileutils.read_lines("data/1.txt"))
 
@@ -27,6 +20,13 @@ def part_one():
 
     sum_dist = sum(abs(list1[i]-list2[i]) for i in range(len(list1)))
     print(sum_dist)
+
+
+def part_two():
+    list1, list2 = parse_data(fileutils.read_lines("data/1.txt"))
+    
+    sim_score = sum(list1[i]*list2.count(list1[i]) for i in range(len(list1)))
+    print(sim_score)
 
 
 def main():
