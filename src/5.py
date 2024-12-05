@@ -37,8 +37,6 @@ def part_one():
         if good:
             ans += page[len(page)//2+1]
 
-            
-
     print(ans)
 
 
