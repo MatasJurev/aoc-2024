@@ -2,7 +2,7 @@ import fileutils
 
 
 def part_one():
-    lines = fileutils.read_lines("data/4simple.txt")
+    lines = fileutils.read_lines("data/4.txt")
     n = 4
     total = 0
     len_lines = len(lines)
